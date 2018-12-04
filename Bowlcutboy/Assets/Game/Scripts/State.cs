@@ -53,7 +53,7 @@ public class State : ScriptableObject
             return idxPrefered;
         }
         Debug.Log("> " + probabilityPrefered);
-        return RandomSate.getrandom.Next(randomMin, randomMax); 
+        return RandomState.getrandom.Next(randomMin, randomMax); 
     }
 
 }

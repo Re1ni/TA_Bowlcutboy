@@ -19,8 +19,9 @@ public class BowlcutGame : MonoBehaviour {
     public Text HealthDoctor;
     public Text HealthBoy;
 
+    public GameObject loadSceneObject;
     private SceneLoader sceneLoader;
-    private State actualState;
+    public State actualState;
 
     private void IntroSetupUI()
     {
@@ -40,16 +41,16 @@ public class BowlcutGame : MonoBehaviour {
     {
         sceneLoader = loadSceneObject.GetComponent<SceneLoader>();
         actualState = startingState;
-        textIntroComponent.text = actualState.GetStateStory();
+        //textIntroComponent.text = actualState.GetStateStory();
         BoyIntroText.text = actualState.GetStateStoryMenue();
 
-        ResetValues();
+       //ResetValues();
 
         //statesUntilRescue = 30;
-        wait = false;
-        Debug.Log("Enter");
+       /* wait = false;
+        Debug.Log("Enter"); */
 
-        SetupIntroUI();
+        IntroSetupUI();
     }
 
 	
