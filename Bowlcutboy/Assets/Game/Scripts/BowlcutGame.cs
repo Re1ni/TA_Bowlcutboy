@@ -9,6 +9,7 @@ public class BowlcutGame : MonoBehaviour {
     const int Health = 100;
     const int Damage = 50;
 
+    public State startingState;
     public Text BoyIntroText;
     public Text RottlingerIntroText;
     public Text AttackInfo;
@@ -24,14 +25,33 @@ public class BowlcutGame : MonoBehaviour {
     private void IntroSetupUI()
     {
         BoyIntroText.enabled = true;
+        RottlingerIntroText.enabled = false;
+
 
     }
 
-    // Use this for initialization
-    void Start () {
-        //I dont know what to do
-		
-	}
+    void SetupRottlingerUI()
+    {
+        BoyIntroText.enabled = false;
+        RottlingerIntroText.enabled = true;
+    }
+
+    void Start()
+    {
+        sceneLoader = loadSceneObject.GetComponent<SceneLoader>();
+        actualState = startingState;
+        textIntroComponent.text = actualState.GetStateStory();
+        BoyIntroText.text = actualState.GetStateStoryMenue();
+
+        ResetValues();
+
+        //statesUntilRescue = 30;
+        wait = false;
+        Debug.Log("Enter");
+
+        SetupIntroUI();
+    }
+
 	
 	// Update is called once per frame
 	void Update () {
