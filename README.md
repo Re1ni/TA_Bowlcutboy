@@ -12,9 +12,6 @@ https://github.com/julelies
 https://github.com/therealunrealj
 https://github.com/kevinbulay
 
-![Image NumberWizard](./Screenshots/Screenshot1.png)
-![Image NumberWizard](./Screenshots/Screenshot2.png)
-![Image NumberWizard](./Screenshots/Screenshot3.png)
-![Image NumberWizard](./Screenshots/Screenshot4.png)
+![Image Bowlcutboy](./Screenshots/ScreenshotGame.png)
 
 ## please don't use any of our graphic work
