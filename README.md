@@ -22,3 +22,6 @@ The adventures of Bowlcutboy is a text adventure game in which Bowcutboy has to 
 * Die Dokumentation wurde heute erfolgreich von Julian gepusht und ist, bis zum letzten Tag an dem gearbeitet wurde, vollständig.
 * Die fehlenden Objekte wie Skizzen und weiteres wird versucht, noch hochzuladen.
 * Das ReadMe wurde auch heute von Julian erweitert und "vervollständigt".
+
+
+
